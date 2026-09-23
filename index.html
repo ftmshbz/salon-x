@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Salon X portföy ve randevu sayfası." />
+    <meta name="theme-color" content="#e8eaec" />
+    <title>Salon X — Randevu ve portföy</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%231e1d1b'/%3E%3Cpath d='M18 44V20h8v24zm10 0V14h8v30zm10 0V23h8v21z' fill='%2368737a'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="salon.css" />
+  </head>
+  <body class="salon-app">
+    <a class="skip-link" href="#portfoy">İçeriğe geç</a>
+
+    <header class="site-header salon-header" id="siteHeader">
+      <div class="container header-inner">
+        <a class="brand salon-brand" href="#salon" aria-label="Salon X ana sayfa">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="brand-name">salon<span>x</span></span>
+        </a>
+        <nav class="main-nav salon-nav" aria-label="Ana menü">
+          <a class="nav-link active" href="#salon">Salon</a>
+          <a class="nav-link" href="#portfoy">Çalışmalar</a>
+          <a class="nav-link" href="#randevu">Randevu</a>
+          <a class="nav-link" href="#randevularim">Yönetim</a>
+        </nav>
+        <div class="header-actions">
+          <button class="icon-button theme-button" type="button" data-action="toggle-theme" aria-label="Koyu temayı aç" title="Temayı değiştir">
+            <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"></path></svg>
+          </button>
+          <button class="button button-accent header-book-button" type="button" data-action="open-booking">Randevu al</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="salon-page">
+      <section class="salon-hero" id="salon">
+        <div class="salon-hero-wash" aria-hidden="true"></div>
+        <div class="container salon-hero-grid">
+          <div class="salon-hero-copy">
+            <div class="salon-status"><span></span> Randevu ile çalışıyoruz</div>
+            <h1>Kişiye özel<br /><em>güzellik.</em></h1>
+            <p>İstanbul'da modern bir kuaför deneyimi. Saçına uygun kesim, bakır tonlar ve kendini gibi hissettiğin bir ortam.</p>
+            <div class="salon-hero-meta">
+              <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>Karaköy, İstanbul</span>
+              <span><span class="meta-divider"></span><strong>10:00—20:00</strong> Her gün</span>
+            </div>
+            <div class="hero-actions salon-hero-actions">
+              <button class="button button-accent button-large" type="button" data-action="open-booking">Randevu oluştur <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
+              <a class="text-link" href="#portfoy">Çalışmalarımızı gör <span>↓</span></a>
+            </div>
+            <div class="salon-rating"><span class="rating-stars">★★★★★</span><strong>4.9</strong><span>· 120+ memnun misafir</span></div>
+          </div>
+          <div class="salon-hero-art" aria-label="Salon X çalışma örnekleri">
+            <div class="salon-art-orbit orbit-one"></div><div class="salon-art-orbit orbit-two"></div>
+            <div class="salon-art-main-card">
+              <div class="salon-art-photo salon-demo-photo salon-demo-copper"><span class="demo-face"></span><span class="demo-hair"></span><span class="demo-neck"></span></div>
+              <div class="salon-art-caption"><div><small>Yeni çalışma</small><strong>Copper texture</strong></div><span class="art-color-dot copper-dot"></span></div>
+            </div>
+            <div class="salon-art-side-card">
+              <div class="salon-art-photo salon-demo-photo salon-demo-blonde"><span class="demo-face"></span><span class="demo-hair"></span><span class="demo-neck"></span></div>
+              <div class="salon-art-caption"><strong>Soft blonde</strong><span>Doğal ışık</span></div>
+            </div>
+            <div class="salon-art-note"><span class="art-note-icon">✦</span><div><small>Çalışma notu</small><strong>Saç dokusu</strong></div></div>
+            <div class="salon-art-stamp">X<br /><small>SALON</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking-section" id="randevu">
+        <div class="container booking-layout">
+          <div class="booking-copy">
+            <span class="section-eyebrow">Randevu</span>
+            <h2>Zamanını ayır,<br /><em>stilini</em> yaşat.</h2>
+            <p>İstediğin hizmeti ve saati seç. Randevun onaylandığında seni arayalım.</p>
+            <div class="booking-points">
+              <div><span>01</span><p><strong>İstediğin zamanı seç</strong>Uygun gün ve saatler anında görünür.</p></div>
+              <div><span>02</span><p><strong>Bilgilerini bırak</strong>Adın ve telefonun yeterli.</p></div>
+              <div><span>03</span><p><strong>Onayını al</strong>Salon ekibimiz kısa süre içinde ulaşır.</p></div>
+            </div>
+          </div>
+          <div class="booking-card" id="bookingCard">
+            <div class="booking-card-top"><div><span class="section-eyebrow">Salon X</span><h3>Randevu formu</h3></div><span class="open-pill"><i></i> Bugün açık</span></div>
+            <div class="booking-success" id="bookingSuccess" hidden>
+              <div class="success-check">✓</div>
+              <span class="section-eyebrow">Talebin alındı</span>
+              <h3>Randevun için teşekkürler.</h3>
+              <p id="bookingSuccessText"></p>
+              <button class="button button-ghost" type="button" data-action="new-booking">Yeni randevu oluştur</button>
+            </div>
+            <form id="bookingForm" novalidate>
+              <div class="booking-reference" id="bookingReference">
+                <div class="booking-reference-heading"><div><span>Saç şekli referansı</span><small>İsteğe bağlı</small></div><button class="booking-reference-action" type="button" data-action="change-booking-image">Görsel yükle</button></div>
+                <div class="booking-reference-zone" id="bookingReferenceZone" tabindex="0" role="button" aria-label="İstenilen saç şekli fotoğrafı yükle">
+                  <input id="bookingImageInput" type="file" accept="image/jpeg,image/png,image/webp" hidden />
+                  <div class="booking-reference-placeholder" id="bookingReferencePlaceholder"><span class="reference-upload-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4M7 9l5-5 5 5M5 14v5h14v-5"></path></svg></span><strong>İstediğin saç şeklinin fotoğrafını ekle</strong><p>Model veya ilham görseli yükle · JPG, PNG, WEBP</p></div>
+                  <div class="booking-reference-preview" id="bookingReferencePreview" hidden><img id="bookingReferenceImage" alt="Yüklenen saç şekli referansı" /><div><button type="button" data-action="remove-booking-image" aria-label="Referans fotoğrafını kaldır">×</button><span>Fotoğrafı değiştir</span></div></div>
+                </div>
+                <p class="field-error" id="bookingImageError" role="alert"></p>
+              </div>
+              <div class="booking-form-grid">
+                <label class="form-field"><span>Ad soyad <b>*</b></span><input id="bookingName" name="name" type="text" maxlength="50" placeholder="Adın ve soyadın" required /></label>
+                <label class="form-field"><span>Telefon <b>*</b></span><input id="bookingPhone" name="phone" type="tel" maxlength="20" placeholder="05__ ___ __ __" required /></label>
+                <label class="form-field form-field-full"><span>Hizmet <b>*</b></span><span class="select-wrap"><select id="bookingService" name="service" required><option value="">Hizmet seç</option><option>Kadın kesim & fön</option><option>Erkek kesim</option><option>Saç boyama</option><option>Balayage / renk</option><option>Fiyat görüşmesi</option></select><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4"></path></svg></span></label>
+                <label class="form-field"><span>İstenilen saç rengi</span><span class="select-wrap"><select id="bookingColor" name="color"><option value="">Renk seç</option><option>Siyah</option><option>Kestane</option><option>Bal</option><option>Bakır</option><option>Kızıl</option><option>Gri</option><option>Beyaz</option><option>Diğer</option></select><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4"></path></svg></span></label>
+                <label class="form-field"><span>Boya markası</span><span class="select-wrap"><select id="bookingBrand" name="brand"><option value="">Marka seç</option><option>Wella</option><option>L’Oréal Paris</option><option>Schwarzkopf</option><option>Revlon</option><option>Goldwell</option><option>Diğer / yok</option></select><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4"></path></svg></span></label>
+                <label class="form-field"><span>Tarih <b>*</b></span><input id="bookingDate" name="date" type="date" required /></label>
+                <label class="form-field"><span>Saat <b>*</b></span><span class="select-wrap"><select id="bookingTime" name="time" required><option value="">Saat seç</option><option>10:00</option><option>11:30</option><option>13:00</option><option>14:30</option><option>16:00</option><option>17:30</option><option>19:00</option></select><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4"></path></svg></span></label>
+                <label class="form-field form-field-full"><span>Not</span><textarea id="bookingNote" name="note" rows="3" maxlength="180" placeholder="İstersen kuaförüne not bırak..."></textarea></label>
+              </div>
+              <button class="button button-accent booking-submit" type="submit">Randevu talebi gönder <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
+              <p class="booking-privacy">Bilgilerin yalnızca randevu için kullanılır.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-section" id="portfoy">
+        <div class="container">
+          <div class="portfolio-heading">
+            <div><span class="section-eyebrow">Salon X galerisi</span><h2>Son çalışmalar</h2><p>Salonumuzda sevilen kesimler, boyalar ve dokular.</p></div>
+            <button class="button button-dark" type="button" data-action="open-upload"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg> Çalışma ekle</button>
+          </div>
+          <div class="portfolio-toolbar">
+            <div class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg><input id="portfolioSearch" type="search" placeholder="Çalışma, model veya renk ara..." autocomplete="off" /></div>
+            <label class="portfolio-sort"><span>Şekil</span><select id="portfolioShape" aria-label="Saç şekline göre filtrele"><option value="Tümü">Tüm çalışmalar</option><option>Kısa</option><option>Bob</option><option>Orta</option><option>Uzun</option><option>Dalgalı</option></select></label>
+          </div>
+          <div class="portfolio-meta"><p><strong id="portfolioCount">0</strong> çalışma</p><span>Son yüklenenler önce</span></div>
+          <div class="portfolio-grid" id="portfolioGrid" aria-live="polite"></div>
+          <div class="empty-state" id="portfolioEmpty" hidden><div class="empty-illustration"><span>✦</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M7 7l1 13h8l1-13M9 7V4h6v3"></path></svg></div><h3>Henüz çalışma yok</h3><p>İlk model fotoğrafını ekleyerek salon galerini oluşturmaya başla.</p><button class="button button-dark" type="button" data-action="open-upload">Çalışma ekle</button></div>
+        </div>
+      </section>
+
+      <section class="appointments-section" id="randevularim">
+        <div class="container">
+          <div class="appointments-heading"><div><span class="section-eyebrow">Yönetim modu</span><h2>Randevu talepleri</h2><p>Gelen talepleri onayla veya iptal et.</p></div><span class="admin-badge">Salon X · Yönetici</span></div>
+          <div class="appointments-list" id="appointmentList"></div>
+          <div class="appointment-empty" id="appointmentEmpty" hidden>Henüz randevu talebi yok.</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="salon-footer" id="iletisim">
+      <div class="container salon-footer-main"><div><a class="brand salon-brand" href="#salon"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand-name">salon<span>x</span></span></a><p>Kişiye özel kesim, renk ve bakım.</p></div><div class="footer-contact"><div><small>Adres</small><strong>Karaköy, İstanbul</strong></div><div><small>Çalışma saatleri</small><strong>Her gün 10:00—20:00</strong></div><div><small>Randevu</small><strong>Bu sayfadan oluştur</strong></div></div></div>
+      <div class="container salon-footer-bottom"><p>© <span id="currentYear"></span> Salon X</p><p>Stilin, sana ait.</p></div>
+    </footer>
+
+    <dialog class="dialog upload-dialog" id="uploadDialog" aria-labelledby="uploadTitle">
+      <div class="dialog-panel">
+        <div class="dialog-header"><div><span class="dialog-kicker">Yeni çalışma</span><h2 id="uploadTitle">Model fotoğrafı ekle</h2><p>Fotoğrafı, saç şeklini ve rengini birlikte kaydet.</p></div><button class="dialog-close" type="button" data-action="close-upload" aria-label="Pencereyi kapat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></button></div>
+        <form id="uploadForm" novalidate>
+          <div class="form-scroll">
+            <div class="upload-zone" id="uploadZone" tabindex="0" role="button" aria-label="Model fotoğrafı yükle"><input id="imageInput" type="file" accept="image/jpeg,image/png,image/webp" multiple hidden /><div class="upload-placeholder" id="uploadPlaceholder"><div class="upload-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4M7 9l5-5 5 5M5 14v5h14v-5"></path></svg></div><strong>Fotoğrafları buraya sürükle</strong><p>veya bilgisayarından seç</p><span>JPG, PNG, WEBP · En fazla 8 MB</span></div><div class="image-preview-list" id="imagePreviewList" hidden></div></div>
+            <p class="field-error image-error" id="imageError" role="alert"></p>
+            <div class="form-grid">
+              <label class="form-field form-field-full"><span>Çalışma başlığı <b>*</b></span><input id="workTitle" name="title" type="text" maxlength="60" placeholder="Örn. Sıcak bakır layered kesim" required /><small><span id="titleCount">0</span>/60</small></label>
+              <label class="form-field"><span>Model adı</span><input id="modelName" name="model" type="text" maxlength="32" placeholder="İsteğe bağlı" /></label>
+              <label class="form-field"><span>Saç şekli <b>*</b></span><span class="select-wrap"><select id="workShape" name="shape" required><option value="">Seç</option><option>Kısa</option><option>Bob</option><option>Orta</option><option>Uzun</option><option>Dalgalı</option></select><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4"></path></svg></span></label>
+              <label class="form-field form-field-color"><span>Saç rengi <b>*</b></span><input id="colorPicker" name="colorHex" type="color" value="#9b4f32" aria-label="Saç rengi seç" /><input id="workColor" name="color" type="text" maxlength="24" placeholder="Örn. Bakır" required /></label>
+              <label class="form-field form-field-full"><span>Çalışma notu</span><textarea id="workNote" name="note" rows="3" maxlength="180" placeholder="Kullanılan teknik, ürün veya dokünotu..."></textarea><small><span id="noteCount">0</span>/180</small></label>
+            </div>
+          </div>
+          <div class="dialog-footer"><p>Görseller bu cihazda saklanır.</p><div><button class="button button-ghost" type="button" data-action="close-upload">Vazgeç</button><button class="button button-accent" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>Çalışmayı kaydet</button></div></div>
+        </form>
+      </div>
+    </dialog>
+
+    <dialog class="dialog detail-dialog" id="detailDialog" aria-labelledby="detailTitle"><div class="detail-panel" id="detailPanel"></div></dialog>
+    <div class="toast-region" id="toastRegion" aria-live="polite" aria-atomic="true"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
